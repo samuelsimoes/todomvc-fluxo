@@ -21,7 +21,9 @@ window.Todo = React.createClass({
   },
 
   toggleEditMode: function () {
-    this.setState({ editing: !this.state.editing });
+    this.setState({ editing: !this.state.editing }, function() {
+      this.refs.content.getDOMNode().focus();
+    });
   },
 
   onSubmitEditForm: function(evt) {
