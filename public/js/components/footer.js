@@ -15,14 +15,22 @@ window.Footer = React.createClass({
     );
   },
 
+  renderCounter: function() {
+    var label = this.props.itemsLeftCount == 1 ? "item" : "items";
+
+    return (
+      <span className="todo-count">
+        <strong>{this.props.itemsLeftCount}</strong> {label} left
+      </span>
+    );
+  },
+
   render: function() {
     var cx = React.addons.classSet;
 
     return (
       <footer className="footer">
-        <span className="todo-count">
-          <strong>{this.props.itemsLeftCount}</strong> items left
-        </span>
+        {this.renderCounter()}
 
         <ul className="filters">
           <li>
