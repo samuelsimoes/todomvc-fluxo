@@ -5,6 +5,16 @@ window.Footer = React.createClass({
     Fluxo.callAction("Todos", "clearCompleted");
   },
 
+  renderClearCompletedBtn: function() {
+    if (this.props.completedCount <= 0) { return; }
+
+    return (
+      <button onClick={this.clearCompleted} className="clear-completed">
+        Clear completed
+      </button>
+    );
+  },
+
   render: function() {
     var cx = React.addons.classSet;
 
@@ -35,7 +45,7 @@ window.Footer = React.createClass({
           </li>
         </ul>
 
-        <button onClick={this.clearCompleted} className="clear-completed">Clear completed</button>
+        {this.renderClearCompletedBtn()}
       </footer>
     );
   }

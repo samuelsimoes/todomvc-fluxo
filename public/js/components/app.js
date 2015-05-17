@@ -22,7 +22,8 @@ window.AppComponent = React.createClass({
     if (this.state.todos.data.count <= 0) { return; }
 
     return (<Footer currentFilter={this.state.todos.data.currentFilter}
-                   itemsLeftCount={this.state.todos.data.pendingCount} />);
+                    completedCount={this.state.todos.data.completedCount}
+                    itemsLeftCount={this.state.todos.data.pendingCount} />);
   },
 
   render: function() {

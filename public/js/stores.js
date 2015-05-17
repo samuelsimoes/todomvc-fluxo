@@ -13,6 +13,7 @@ window.Todos = Fluxo.CollectionStore.extend({
 
   computed: {
     pendingCount: ["change"],
+    completedCount: ["change"],
     count: ["change"]
   },
 
@@ -52,6 +53,10 @@ window.Todos = Fluxo.CollectionStore.extend({
 
   pendingCount: function() {
     return this.pendingTodos().length;
+  },
+
+  completedCount: function() {
+    return this.completedTodos().length;
   },
 
   storesToJSON: function() {
