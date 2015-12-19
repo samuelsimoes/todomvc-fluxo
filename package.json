@@ -6,7 +6,6 @@
     "babel-loader": "^5.0.0",
     "babel-runtime": "^5.0.0",
     "css-loader": "^0.23.0",
-    "express": "^4.12.3",
     "fluxo-js": "0.0.21",
     "fluxo-react-connect-stores": "0.0.5",
     "history": "^1.13.1",
