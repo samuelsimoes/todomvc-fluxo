@@ -1,5 +1,4 @@
 import Fluxo from "fluxo-js";
-import _ from "underscore";
 import TodoStore from "./todo_store.js";
 
 export default class extends Fluxo.CollectionStore {
@@ -56,11 +55,11 @@ export default class extends Fluxo.CollectionStore {
   }
 
   updateDone (checked) {
-    _.invoke(this.stores, "setAttribute", "done", checked);
+    this.stores.forEach(store => store.setAttribute("done", checked));
   }
 
   editMode (cid) {
-    _.invoke(this.stores, "closeEdit");
+    this.stores.forEach(store => store.closeEdit());
     this.find(cid).editMode();
   }
 
