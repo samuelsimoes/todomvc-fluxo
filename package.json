@@ -1,11 +1,26 @@
 {
   "private": true,
   "dependencies": {
+    "babel": "^5.0.0",
+    "babel-core": "^5.0.0",
+    "babel-loader": "^5.0.0",
+    "babel-runtime": "^5.0.0",
+    "css-loader": "^0.23.0",
     "express": "^4.12.3",
+    "fluxo-js": "0.0.21",
+    "fluxo-react-connect-stores": "0.0.5",
+    "history": "^1.13.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^1.0.2",
+    "style-loader": "^0.13.0",
     "todomvc-app-css": "^2.0.0",
-    "todomvc-common": "^1.0.0"
+    "todomvc-common": "^1.0.0",
+    "underscore": "^1.8.3",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "./node_modules/.bin/webpack-dev-server"
   }
 }
