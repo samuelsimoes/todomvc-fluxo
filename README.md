@@ -16,3 +16,6 @@ _The app uses the webpack dev server, so, if you change any file the browser wil
 3. You need know the **[Fluxo React Connect Stores](https://github.com/fluxo-js/fluxo-react-connect-stores)**.
 4. You need know a little about **[React Router](https://github.com/rackt/react-router)**.
 5. Everything starts **[here](https://github.com/samuelsimoes/todomvc-fluxo/blob/master/src/app.js#L15-L18)**.
+
+##App's architecture
+![app's flow](workflow.png)
