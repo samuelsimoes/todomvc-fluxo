@@ -10,7 +10,7 @@ Yes, we can!
 
 _The app uses the webpack dev server, so, if you change any file the browser will make auto refresh._
 
-##Quickly briefing...
+##Quick briefing...
 1. You need know about **[React](https://facebook.github.io/react/)**.
 2. You need know about **[Fluxo](https://github.com/fluxo-js/fluxo)**.
 3. You need know the **[Fluxo React Connect Stores](https://github.com/fluxo-js/fluxo-react-connect-stores)**.
