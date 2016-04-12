@@ -12,7 +12,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, loaders: ["babel?stage=1"] },
+      { test: /\.js$/, loader: "babel" },
       { test: /\.css$/, loader: "style-loader!css-loader" }
     ]
   },
