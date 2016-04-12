@@ -7,7 +7,7 @@
     "babel-preset-stage-0": "6.5.0",
     "babel-loader": "6.2.4",
     "css-loader": "^0.23.0",
-    "fluxo-js": "0.0.21",
+    "fluxo-js": "0.0.23",
     "fluxo-react-connect-stores": "0.0.5",
     "history": "^1.13.1",
     "react": "^0.14.3",

@@ -76,7 +76,7 @@ export default class extends Fluxo.CollectionStore {
   }
 
   clearCompleted () {
-    this.resetStores(this.activeTodos());
+    this.resetStores(this.activeTodos(), { releaseStores: false });
   }
 
   filtered () {
