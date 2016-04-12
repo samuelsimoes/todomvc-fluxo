@@ -3,7 +3,7 @@ var webpack = require("webpack"),
 
 module.exports = {
   entry: {
-    app: ["./src/app.js", ("webpack-dev-server/client?http://localhost:" + process.env.PORT)]
+    app: ["./src/app.js", ("webpack-dev-server/client?http://localhost:" + (process.env.PORT || 3000))]
   },
   output: {
     path: "./public/js",
